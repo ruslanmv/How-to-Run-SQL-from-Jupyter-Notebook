@@ -243,7 +243,7 @@ Once a database connection is established, you can create tables by passing the 
 
 
 
-Now you know how to connect to a MySQL server from Python, In this section, we will learn how to create a table in MySQL from Python. Let’s create table ‘Laptop’ under the ‘Electronics’ database.
+Now you know how to connect to a MySQL server from Python, In this section, we will learn how to create a table in MySQL from Python. Let’s create table ‘Laptop’ under the remote database.
 
 
 ```python
