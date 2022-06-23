@@ -138,6 +138,8 @@ mysql> Desc Employee;
 
 # How to connect to Mysql using python and import the csv file into mysql  from Jupyter Notebook
 
+Once you have received your credentials in your email create a credentials.json file.
+
 In ordering to keep safe our credentials we save our credentials in a file **credentials.json**
 
 ```
@@ -299,11 +301,9 @@ df = pd.DataFrame({'name' : ['User 1', 'User 2', 'User 3']})
 df
 ```
 
-
-
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>name</th>
     </tr>
@@ -323,8 +323,6 @@ df
     </tr>
   </tbody>
 </table>
-
-
 
 
 ```python
@@ -354,8 +352,6 @@ engine.execute("SELECT * FROM users").fetchall()
 ```
 
 
-
-
     [(0, 'User 1'),
      (1, 'User 2'),
      (2, 'User 3'),
@@ -371,7 +367,9 @@ In short, to create a table using python ;
 - Create a cursor object by invoking the ***cursor()\*** method on the connection object created above.
 - Then, execute the *CREATE TABLE* statement by passing it as a parameter to the **execute()** method.
 
-## Create an MySQL database with Pandas in real Database
+
+
+# Create an MySQL database with Pandas in real Database
 
 ## First method with mysql.connector 
 
@@ -456,7 +454,7 @@ df.head()
   </tbody>
 </table>
 
-
+You can download here
 
 
 ```python
@@ -464,13 +462,9 @@ df.columns
 ```
 
 
-
-
     Index(['Product Name', 'GPU Chip', 'Released', 'Bus', 'Memory', 'GPU clock',
            'Memory clock'],
           dtype='object')
-
-
 
 
 ```python
